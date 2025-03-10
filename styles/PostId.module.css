@@ -1,0 +1,16 @@
+.post {
+  margin-top: 15%;
+}
+.post h1 {
+  text-align: center;
+}
+.post p {
+  max-width: 695px;
+  text-align: justify;
+  font-size: 26px;
+  line-height: 42px;
+  font-weight: 300;
+}
+.post .post__nav {
+  font-size: 36px;
+}/*# sourceMappingURL=PostId.module.css.map */

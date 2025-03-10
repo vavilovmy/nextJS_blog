@@ -1,0 +1,59 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  max-height: 5vh;
+}
+.header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+.header .header__button {
+  width: 35px;
+  height: 20px;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 15px;
+  position: relative;
+  transition: border-color 0.5s ease, background-color 0.5s ease, box-shadow 0.5s ease;
+  overflow: clip;
+}
+.header .header__button input {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  transform: translate(-10px, -10px);
+  z-index: 5;
+  opacity: 0;
+}
+.header .header__button::after {
+  content: "";
+  background-color: #F9F4EC;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  position: absolute;
+  right: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+.header .header__button:has(input[type=checkbox]:checked)::after {
+  transform: translate(-15px, -50%);
+  background-color: black;
+}
+.header .header__button:has(input[type=checkbox]:checked) {
+  background-color: #F9F4EC;
+  box-shadow: 0px 0px 10px #EE5626;
+  border-color: #EE5626;
+}/*# sourceMappingURL=Header.module.css.map */

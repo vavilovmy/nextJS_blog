@@ -1,0 +1,17 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  max-height: 5vh;
+}
+.footer .socials {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+.footer a img {
+  background-color: #F9F4EC;
+  border-radius: 100%;
+}/*# sourceMappingURL=Footer.module.css.map */
